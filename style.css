@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Manrope, sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  background-color: hsl(218, 23%, 16%);
+}
+
+#container {
+  max-width: 1440px;
+  margin: 200px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#advice-container {
+  color: hsl(193, 38%, 86%);
+  background-color: hsl(217, 19%, 24%);
+  padding: 40px 30px 60px 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+#advice-id {
+  color: hsl(150, 100%, 66%);
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+}
+
+#advice-text {
+  padding-top: 36px;
+  line-height: 155%;
+}
+
+#desktop-pattern-divider {
+  visibility: visible;
+}
+
+#mobile-pattern-divider {
+  visibility: hidden;
+}
+
+#next {
+  padding: 24px;
+  border-style: none;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  position: relative;
+  top: 94px;
+}
+
+#next:hover {
+  cursor: pointer;
+  box-shadow: 0 0 60px 15px hsl(150, 100%, 66%);
+}
+
+.attribution {
+  font-size: 11px;
+  background-color: hsl(193, 38%, 86%);
+  max-width: 1440px;
+  border-radius: 11px;
+  margin-top: 80px;
+  padding: 15px;
+  background: linear-gradient(to right, hsl(193, 38%, 86%), hsl(218, 23%, 16%));
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 700px) {
+  #advice-container,
+  .attribution {
+    width: 375px;
+  }
+
+  #desktop-pattern-divider {
+    visibility: hidden;
+  }
+
+  #mobile-pattern-divider {
+    visibility: visible;
+  }
+}
